@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spotify Bulk Playlist Manager</title>
+</head>
+<body>
+  <h1>Spotify Bulk Playlist Manager</h1>
+
+  <!-- Login / auth status -->
+  <p><button id="login">Log in with Spotify</button> <span id="status"></span></p>
+
+  <!-- Step 1: paste songs -->
+  <h2>1. Paste songs (one per line)</h2>
+  <textarea id="songs" rows="12" cols="60"
+    placeholder="Karma Police Radiohead&#10;Bohemian Rhapsody Queen"></textarea>
+  <br />
+  <button id="search">Search all songs</button>
+
+  <!-- Step 2: review results -->
+  <h2>2. Review matches</h2>
+  <p><em>Uncheck any match that looks wrong; it will be skipped.</em></p>
+  <div id="results"></div>
+
+  <!-- Step 3: choose playlist and add -->
+  <h2>3. Add to playlist</h2>
+  <select id="playlists"></select>
+  <button id="add">Add selected songs to playlist</button>
+  <p id="add-status"></p>
+
+  <script src="app.js"></script>
+</body>
+</html>
